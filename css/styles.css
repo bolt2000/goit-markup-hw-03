@@ -7,7 +7,15 @@
   --brand-background: #2f303a;
   --brand-background2: #f5f4fa;
   --brand-logo: #000000;
-  --brand-footer:rgba(255, 255, 255, 0.6);
+  --brand-footer: rgba(255, 255, 255, 0.6);
+}
+
+/* Reset margin */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
 body,
@@ -16,6 +24,14 @@ body,
   color: var(--brand-body);
   font-size: 14px;
   font-weight: 400;
+}
+/* Общий */
+.container {
+  padding-left: 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid black;
 }
 /* Logo */
 .logo {
@@ -32,6 +48,7 @@ body,
 .logo-color2 {
   color: var(--brand-white);
 }
+
 /* Header Navigation */
 .nav-link {
   color: var(--brand-black);
@@ -68,6 +85,9 @@ body,
 .hero {
   background-color: var(--brand-background);
   text-align: center;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-text {
   color: var(--brand-white);
@@ -76,6 +96,9 @@ body,
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  width: 696px;
 }
 /* Button */
 .button {
@@ -127,6 +150,10 @@ button:focus {
   color: var(--brand-white);
 }
 
+.section2 {
+  padding-bottom: 94px;
+}
+
 /* All H2 font-color index.html*/
 .h2-index {
   color: var(--brand-black);
@@ -134,8 +161,13 @@ button:focus {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
+.head-title1 {
+  padding: 94px;
+}
 .title1 {
   color: var(--brand-black);
   font-weight: 700;
@@ -143,6 +175,7 @@ button:focus {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 /* text p1 */
 .p1-text {
@@ -151,6 +184,8 @@ button:focus {
 }
 /* Us team */
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--brand-background2);
 }
 
@@ -160,12 +195,18 @@ button:focus {
   font-size: 16px;
   line-height: 1.187;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 /* text p2 index*/
 .p2-text {
   font-size: 16px;
   line-height: 1.187;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+.p2-text:last-child {
+  margin-bottom: 0px;
 }
 
 /* H3 text site-Portfolio */
@@ -186,7 +227,8 @@ button:focus {
 }
 
 .footer {
-  background: #2f303a;
+  padding: 60px 0px;
+  background: var(--brand-background);
 }
 
 .address-font {
@@ -200,16 +242,26 @@ button:focus {
   color: var(--brand-footer);
 }
 
-.contacts-footer:hover,
+.contacts-address {
+  color: var(--brand-white);
+  font-weight: inherit;
+}
+
+/* .contacts-footer:hover,
 .contacts-footer:focus {
   color: var(--brand-blue);
-}
+} */
 
 /* Убираем маркеры */
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.logo-footer {
+  margin-bottom: 30px;
+}
 /* .list {
   display: inline-flex;
 } */

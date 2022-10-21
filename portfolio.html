@@ -10,11 +10,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Портфоліо</title>
   </head>
   <body>
     <header>
+    <div class="container">
       <!-- Main navigation -->
       <nav class="nav-menu">
         <a href="index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
@@ -28,10 +33,12 @@
         <li><a href="mailto:info@devstudio.com" class="link"> info@devstudio.com </a></li>
         <li><a href="tel:+380961111111" class="link"> +38 096 111 11 11 </a></li>
       </ul>
+</div>
     </header>
     <main>
       <!--Основное-->
       <section>
+        <div class="container">
         <h1 hidden>Сторінка Портфоліо</h1>
         <ul class="list">
           <li><button class="button2 text-button" type="button">Усі</button></li>
@@ -40,6 +47,8 @@
           <li><button class="button2 text-button" type="button">Дизайн</button></li>
           <li><button class="button2 text-button" type="button">Маркетинг</button></li>
         </ul>
+        </div>
+        <div class="container">
         <ul class="">
           <li>
             <a class="list-photo" href=""
@@ -159,13 +168,15 @@
             >
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
     <!-- Подвал -->
     <footer class="footer">
+      <div class="container">
       <!--Address-->
-      <a href="index.html" class="logo" lang="en"
+      <a href="index.html" class="logo logo-footer" lang="en"
         ><span class="logo-color">Web</span><span class="logo-color2">Studio</span></a
       >
       <address class="address-font">
@@ -175,7 +186,7 @@
               href="https://goo.gl/maps/6Eq97cpLvWqihNQf9"
               target="_blank"
               rel="noopener noreferrer"
-              class="link contacts-footer"
+              class="link contacts-address"
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
@@ -187,6 +198,7 @@
           <li><a href="tel:+380961111111" class="link contacts-footer">+38 096 111 11 11</a></li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
