@@ -20,19 +20,21 @@
   <body>
     <!-- Шапка -->
     <header>
-      <div class="container">
+      <div class="nav-menu container">
         <!-- Main navigation -->
         <nav class="nav-menu">
           <a href="index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
           <ul class="nav-list">
-            <li><a href="./index.html" class="nav-link">Студія</a></li>
-            <li><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
-            <li><a href="./index.html" class="nav-link">Контакти</a></li>
+            <li class="item"><a href="./index.html" class="nav-link">Студія</a></li>
+            <li class="item"><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
+            <li class="item"><a href="./index.html" class="nav-link">Контакти</a></li>
           </ul>
         </nav>
-        <ul>
-          <li><a href="mailto:info@devstudio.com" class="link"> info@devstudio.com </a></li>
-          <li><a href="tel:+380961111111" class="link"> +38 096 111 11 11 </a></li>
+        <ul class="contacts-link">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link"> info@devstudio.com </a>
+          </li>
+          <li class="item"><a href="tel:+380961111111" class="link"> +38 096 111 11 11 </a></li>
         </ul>
       </div>
     </header>
@@ -46,24 +48,24 @@
       <!--specials-->
       <section class="head-title1 container">
         <h2 hidden>Особливості</h2>
-        <ul class="list">
-          <li>
+        <ul class="list list-specials">
+          <li class="item">
             <h3 class="title1">Увага до деталей</h3>
             <p class="p1-text">
               Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
             </p>
           </li>
-          <li>
+          <li class="item">
             <h3 class="title1">Пунктуальність</h3>
             <p class="p1-text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
             </p>
           </li>
-          <li>
+          <li class="item">
             <h3 class="title1">Планування</h3>
             <p class="p1-text">Так само консультація з широким активом значною мірою зумовлює.</p>
           </li>
-          <li>
+          <li class="item">
             <h3 class="title1">Сучасні технології</h3>
             <p class="p1-text">
               Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -74,14 +76,14 @@
       <!--Займаемося-->
       <section class="section2 container">
         <h2 class="h2-index">Чим ми займаємося</h2>
-        <ul class="list">
-          <li>
+        <ul class="list list-works">
+          <li class="item">
             <img src="images/box/box1.jpg" alt="Десктопні додатки" class="box" width="370" />
           </li>
-          <li>
+          <li class="item">
             <img src="images/box/box2.jpg" alt="Мобільні додатки" class="box" width="370" />
           </li>
-          <li>
+          <li class="item">
             <img src="images/box/box3.jpg" alt="Дизайнерські рішення" class="box" width="370" />
           </li>
         </ul>
@@ -90,8 +92,8 @@
       <section class="team">
         <div class="container">
           <h2 class="h2-index">Наша команда</h2>
-          <ul class="list">
-            <li>
+          <ul class="list list-human">
+            <li class="item">
               <img
                 src="images/team/team1.jpg"
                 alt="Ігор Дем'яненко"
@@ -102,7 +104,7 @@
               <h3 class="title-human">Ігор Дем'яненко</h3>
               <p class="p2-text" lang="en">Product Designer</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="images/team/team2.jpg"
                 alt="Ольга Рєпіна"
@@ -113,7 +115,7 @@
               <h3 class="title-human">Ольга Рєпіна</h3>
               <p class="p2-text" lang="en">Frontend Developer</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="images/team/team3.jpg"
                 alt="Микола Тарасов"
@@ -124,7 +126,7 @@
               <h3 class="title-human">Микола Тарасов</h3>
               <p class="p2-text" lang="en">Marketing</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="images/team/team4.jpg"
                 alt="Михайло Єрмаков"
@@ -144,12 +146,14 @@
     <footer class="footer">
       <!--Address-->
       <div class="container">
-        <a href="index.html" class="logo-footer logo" lang="en"
-          ><span class="logo-color">Web</span><span class="logo-color2">Studio</span></a
-        >
+        <div class="footer-pad">
+          <a href="index.html" class="logo-footer logo" lang="en"
+            ><span class="logo-color">Web</span><span class="logo-color2">Studio</span></a
+          >
+        </div>
         <address class="address-font">
-          <ul class="nodecor">
-            <li>
+          <ul class="nodecor footer-flex">
+            <li class="item">
               <a
                 href="https://goo.gl/maps/6Eq97cpLvWqihNQf9"
                 target="_blank"
@@ -158,12 +162,14 @@
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li>
+            <li class="item">
               <a href="mailto:binfo@devstudio.com" class="link contacts-footer"
                 >info@devstudio.com
               </a>
             </li>
-            <li><a href="tel:+380961111111" class="link contacts-footer">+38 096 111 11 11</a></li>
+            <li class="item">
+              <a href="tel:+380961111111" class="link-footer contacts-footer">+38 096 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
