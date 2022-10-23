@@ -24,6 +24,13 @@ h3,
 p {
   margin: 0;
 }
+.current {
+  color: var(--brand-blue);
+}
+
+img {
+  display: block;
+}
 
 body,
 .link-footer {
@@ -36,7 +43,7 @@ body,
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 1230px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   /* outline: 2px solid black; */
@@ -57,10 +64,15 @@ body,
   color: var(--brand-white);
   margin-bottom: 10px;
 }
-/* Menu gorizont */
+/* Menu flex-block */
 .nav-menu {
   display: flex;
   align-items: center;
+}
+
+.header-nav {
+  border-bottom: 1px solid #ececec;
+  display: flex;
 }
 
 .nav-list {
@@ -85,7 +97,7 @@ body,
 /* Contacts header */
 .contacts-link {
   display: flex;
-  margin-left: 344px;
+  margin-left: auto;
 }
 .contacts-link .item + .item {
   margin-left: 50px;
@@ -124,10 +136,9 @@ body,
 /* Hero site */
 .hero {
   background-color: var(--brand-background);
-  text-align: center;
-  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 .hero-text {
   color: var(--brand-white);
@@ -136,9 +147,12 @@ body,
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0px;
   margin-bottom: 40px;
   width: 696px;
+  text-align: center;
 }
 /* Button */
 .button {
@@ -151,7 +165,7 @@ body,
   background: var(--button-main-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: 1px solid transparent;
+  border: none;
 }
 button:hover,
 button:focus {
@@ -190,34 +204,36 @@ button:focus {
 }
 
 .section2 {
-  padding-bottom: 94px;
+  margin-bottom: 94px;
 }
-/* Prtfolio flex block */
 
+/* Prtfolio flex block */
 .list-buttons {
   display: flex;
   justify-content: center;
   margin-top: 94px;
   margin-bottom: 56px;
 }
-
-.list-buttons .item {
+/* Отступы конопок портфолио */
+.list-buttons .item:not(:first-child) {
   margin-left: 8px;
 }
 
 .flex-list-photos {
+  width: 1200px;
   display: flex;
   flex-wrap: wrap;
-  /* background-color: darkblue; */
+  /* background-color: darkorchid; */
 }
 
 .flex-list-photos .item {
-  width: 370px;
-  height: 404px;
   margin-right: 30px;
   margin-bottom: 30px;
   /* background-color: tomato; */
-  border: 1px solid #eeeeee;
+}
+
+.flex-list-photos .item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .flex-list-photos .item:nth-last-child(-n + 3) {
@@ -259,7 +275,7 @@ button:focus {
 }
 
 .list-human .item .photo {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 .list-human .item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -291,7 +307,6 @@ button:focus {
 }
 
 .title-human {
-  text-align: center;
   color: var(--brand-black);
   font-weight: 500;
   font-size: 16px;
@@ -301,25 +316,32 @@ button:focus {
 }
 /* text p2 index*/
 .p2-text {
-  text-align: center;
   font-size: 16px;
   line-height: 1.187;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
 }
 
-.p2-text:last-child {
+/* .p2-text:last-child {
   margin-bottom: 0px;
-}
+} */
 
-/* Photos */
-.photo {
-  margin-bottom: 20px;
+/* Photo cards */
+.format-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+/* Photo cards Portfoli*/
+.format-p3-text {
+  padding: 20px 24px;
+  text-align: left;
+  /* border: 1px solid #eeeeee; */
+  border: solid red;
+  border-radius: 1px 1px 1px ;
 }
 
 /* H3 text site-Portfolio */
 .title-2 {
-  padding-left: 24px;
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -330,7 +352,6 @@ button:focus {
 
 /* text p site-Portfolio */
 .p3-text {
-  padding-left: 24px;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
@@ -366,15 +387,15 @@ button:focus {
 }
 
 .logo-footer {
-  margin-bottom: 0px;
+  display: block;
+  margin-bottom: 20px;
 }
 /* .list {
   display: inline-flex;
 } */
 
-.footer-pad {
-  margin-bottom: 20px;
-}
+/* .footer-pad {
+} */
 
 .footer-flex {
   display: block;

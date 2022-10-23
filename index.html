@@ -20,12 +20,12 @@
   <body>
     <!-- Шапка -->
     <header>
-      <div class="nav-menu container">
+      <div class="header-nav container">
         <!-- Main navigation -->
         <nav class="nav-menu">
           <a href="index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
           <ul class="nav-list">
-            <li class="item"><a href="./index.html" class="nav-link">Студія</a></li>
+            <li class="item"><a href="./index.html" class="nav-link current">Студія</a></li>
             <li class="item"><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
             <li class="item"><a href="./index.html" class="nav-link">Контакти</a></li>
           </ul>
@@ -42,11 +42,14 @@
     <main>
       <!--Hero -->
       <section class="hero">
-        <h1 class="hero-text container">Ефективні рішення для вашого бізнесу</h1>
+        <div class="container">
+        <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
         <button class="button" type="button">Замовити послугу</button>
+        </div>
       </section>
       <!--specials-->
-      <section class="head-title1 container">
+      <section class="head-title1">
+        <div class="container">
         <h2 hidden>Особливості</h2>
         <ul class="list list-specials">
           <li class="item">
@@ -72,9 +75,11 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <!--Займаемося-->
-      <section class="section2 container">
+      <section class="section2">
+        <div class="container">
         <h2 class="h2-index">Чим ми займаємося</h2>
         <ul class="list list-works">
           <li class="item">
@@ -87,6 +92,7 @@
             <img src="images/box/box3.jpg" alt="Дизайнерські рішення" class="box" width="370" />
           </li>
         </ul>
+        </div>
       </section>
       <!--us team-->
       <section class="team">
@@ -101,8 +107,10 @@
                 width="270"
                 height="260"
               />
+              <div class="container format-text">
               <h3 class="title-human">Ігор Дем'яненко</h3>
               <p class="p2-text" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -112,8 +120,10 @@
                 width="270"
                 height="260"
               />
+              <div class="format-text">
               <h3 class="title-human">Ольга Рєпіна</h3>
               <p class="p2-text" lang="en">Frontend Developer</p>
+            </div>
             </li>
             <li class="item">
               <img
@@ -123,8 +133,10 @@
                 width="270"
                 height="260"
               />
+              <div class="format-text">
               <h3 class="title-human">Микола Тарасов</h3>
               <p class="p2-text" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -134,8 +146,10 @@
                 width="270"
                 height="260"
               />
+              <div class="format-text">
               <h3 class="title-human">Михайло Єрмаков</h3>
               <p class="p2-text" lang="en">UI Designer</p>
+            </div>
             </li>
           </ul>
         </div>
@@ -150,7 +164,6 @@
           <a href="index.html" class="logo-footer logo" lang="en"
             ><span class="logo-color">Web</span><span class="logo-color2">Studio</span></a
           >
-        </div>
         <address class="address-font">
           <ul class="nodecor footer-flex">
             <li class="item">
