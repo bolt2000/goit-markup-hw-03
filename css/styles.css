@@ -7,29 +7,36 @@
   --brand-background: #2f303a;
   --brand-background2: #f5f4fa;
   --brand-logo: #000000;
+  --brand-color-border:#EEEEEE;
   --brand-footer: rgba(255, 255, 255, 0.6);
 }
 
 /* Убираем маркеры */
-ul {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 /* Reset margin */
+a,
 h1,
 h2,
 h3,
 p {
   margin: 0;
 }
-.current {
+.studio.current,
+.portfolio.current,
+.contacts.current {
   color: var(--brand-blue);
 }
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 body,
@@ -44,8 +51,7 @@ body,
   padding-left: 15px;
   padding-right: 15px;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+ margin: 0 auto;
   /* outline: 2px solid black; */
 }
 /* Logo */
@@ -220,7 +226,6 @@ button:focus {
 }
 
 .flex-list-photos {
-  width: 1200px;
   display: flex;
   flex-wrap: wrap;
   /* background-color: darkorchid; */
@@ -276,6 +281,7 @@ button:focus {
 
 .list-human .item .photo {
   margin-bottom: 0px;
+  r
 }
 .list-human .item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -336,8 +342,8 @@ button:focus {
   padding: 20px 24px;
   text-align: left;
   /* border: 1px solid #eeeeee; */
-  border: solid red;
-  border-radius: 1px 1px 1px ;
+  border:  1px solid var(--brand-color-border);
+  border-top: none;
 }
 
 /* H3 text site-Portfolio */
