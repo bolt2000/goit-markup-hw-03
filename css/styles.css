@@ -7,7 +7,7 @@
   --brand-background: #2f303a;
   --brand-background2: #f5f4fa;
   --brand-logo: #000000;
-  --brand-color-border:#EEEEEE;
+  --brand-color-border: #eeeeee;
   --brand-footer: rgba(255, 255, 255, 0.6);
 }
 
@@ -51,7 +51,7 @@ body,
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
- margin: 0 auto;
+  margin: 0 auto;
   /* outline: 2px solid black; */
 }
 /* Logo */
@@ -287,9 +287,10 @@ button:focus {
 
 .list-human .item .photo {
   margin-bottom: 0px;
-  r
 }
+
 .list-human .item {
+  background-color: var(--brand-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -348,7 +349,7 @@ button:focus {
   padding: 20px 24px;
   text-align: left;
   /* border: 1px solid #eeeeee; */
-  border:  1px solid var(--brand-color-border);
+  border: 1px solid var(--brand-color-border);
   border-top: none;
 }
 
