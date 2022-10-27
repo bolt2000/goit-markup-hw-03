@@ -50,7 +50,7 @@ body,
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 1200px;
+  width: 1200px;
  margin: 0 auto;
   /* outline: 2px solid black; */
 }
@@ -228,10 +228,12 @@ button:focus {
 .flex-list-photos {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
   /* background-color: darkorchid; */
 }
 
 .flex-list-photos .item {
+  /* flex-basis: calc((100% - 30px) / 4); */
   margin-right: 30px;
   margin-bottom: 30px;
   /* background-color: tomato; */
